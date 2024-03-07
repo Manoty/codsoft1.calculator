@@ -5,7 +5,7 @@ let string = ''
 buttons.forEach(element =>{ 
         element.addEventListener('click', (b)=>{
             if(b.target.innerText == '='){
-                string = string (eval(string))
+                string = eval(string);
                 inputBox.value = string;
             }
             else if(b.target.innerText == 'AC'){
@@ -18,7 +18,7 @@ buttons.forEach(element =>{
                 inputBox.value = string;
             }
             else if(b.target.id == 'plusMinus'){
-                string = string(eval(string))
+                string = eval('-' + string);
                 inputBox.value = string;
             }
             else{
